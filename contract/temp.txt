@@ -1,0 +1,11 @@
+To factory
+npx near call contractcreator.testnet create_factory_subaccount_and_deploy '{"name": "owen", "contract_type": "Greeting"}' --deposit 5 --accountId pivortex.testnet
+npx near call contractcreator.testnet create_factory_subaccount_and_deploy '{"name": "donate", "contract_type": "Donation"}' --deposit 5 --accountId pivortex.testnet
+
+
+To Greeting
+npx near view owen.contractcreator.testnet get_greeting '{}'
+npx near call owen.contractcreator.testnet set_greeting '{"greeting": "message"}' --accountId pivortex.testnet
+
+To Donation 
+npx near view donate.contractcreator.testnet get_beneficiary '{}'

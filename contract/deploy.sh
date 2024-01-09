@@ -10,4 +10,4 @@ fi
 echo ">> Deploying contract"
 
 # https://docs.near.org/tools/near-cli#near-dev-deploy
-near dev-deploy --wasmFile ./target/wasm32-unknown-unknown/release/contract.wasm
+ npx near deploy --accountId contractcreator.testnet --wasmFile /home/pivortex/projects/contract-creator/contract/target/wasm32-unknown-unknown/release/contract.wasm
